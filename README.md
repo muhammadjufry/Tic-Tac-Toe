@@ -7,6 +7,8 @@
 ## Built With
 
 - React JS
+- CSS
+- Responsive Web Design
 
 ## Live Demo Of The Project
 
