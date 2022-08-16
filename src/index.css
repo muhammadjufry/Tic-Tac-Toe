@@ -79,3 +79,9 @@ body {
     transform: scale(1);
   }
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    margin-top: calc(100vh / 6);
+  }
+}
