@@ -1,12 +1,19 @@
-# Tic tac toe project
+# Tic Tac Toe
 
-This is our Tic Tac Toe game.
+> This is my tic tac toe game. This project I created using React JS
 
-## Live Demo
+> ![screenshot](screenshot.png)
 
-https://tic-tac-toe121.netlify.app/
+## Built With
 
-### Language I used:
+- React JS
 
-1: React JS
-2: CSS
+## Live Demo Of The Project
+
+https://tictactoe-game5.netlify.app/
+
+## Authors
+
+👤 **Muhammad**
+
+- GitHub: [MuhammadJufri](https://github.com/MuhammadJufri)
