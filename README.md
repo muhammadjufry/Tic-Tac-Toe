@@ -1,6 +1,6 @@
 # Tic Tac Toe
 
-> This is my tic tac toe game. This project I created using React JS
+> This is my tic tac toe game. On this game you can play with your friends or against computer
 
 > ![screenshot](screenshot.png)
 
