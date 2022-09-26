@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   display: flex;
-  margin-top: calc(100vh / 4);
+  margin-top: calc(100vh / 3);
   justify-content: center;
 }
 
@@ -19,8 +22,10 @@ body {
 .startGame {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
   padding: 30px;
+  text-align: center;
 }
 
 .startGameOptions {
@@ -54,6 +59,21 @@ body {
 .board {
   display: grid;
   grid-template-columns: repeat(3, auto);
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  margin: 2px;
+  cursor: pointer;
 }
 
 .restartGame {

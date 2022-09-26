@@ -1,6 +1,8 @@
+import type { NextPage } from 'next';
 import React, { useEffect, useState } from 'react';
-import { Square } from './components/Square/Square';
-const App = () => {
+import Square from '../components/Square';
+
+const App: NextPage = () => {
   let isGameOver = false;
   let statusPlayer;
   let gameStatus;
@@ -24,7 +26,7 @@ const App = () => {
     ? (statusPlayer = winner)
     : (statusPlayer = 'Player Turn: ' + (xTurn ? 'X' : 'O'));
 
-  const gamePlay = (bool) => {
+  const gamePlay = (bool: boolean) => {
     if (bool) {
       setComputerPlay(true);
       setStartGame(true);
@@ -34,14 +36,12 @@ const App = () => {
     }
   };
 
-  const handleClick = (i) => {
+  const handleClick = (i: number) => {
     if (isGameOver || squares[i] !== null) return;
     let squaresCopy = [...squares];
     squaresCopy[i] = xTurn ? 'X' : !computerPlay && 'O';
     const newNumberOfTurnsLeft = numberOfTurnsLeft - 1;
-    setNumberOfTurnsLeft(
-      computerPlay ? xTurn && newNumberOfTurnsLeft : newNumberOfTurnsLeft
-    );
+    setNumberOfTurnsLeft(newNumberOfTurnsLeft);
     setXTurn(computerPlay ? false : !xTurn);
     setSquares(squaresCopy);
   };
@@ -63,7 +63,7 @@ const App = () => {
 
   useEffect(playWithComputer);
 
-  function calculateWinner(squares) {
+  function calculateWinner(squares: number[]) {
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
 
@@ -100,7 +100,7 @@ const App = () => {
     <div className="App">
       {!startGame ? (
         <div className="startGame">
-          <h1>Tic tac toe game</h1>
+          <h1>Tic Tac Toe</h1>
           <div className="startGameOptions">
             <button className="playButton" onClick={() => gamePlay(false)}>
               Play with Friends
@@ -114,13 +114,16 @@ const App = () => {
         <div className="game">
           <h3>{statusPlayer}</h3>
           <div className="board">
-            {squares.map((square, index) => (
-              <Square
-                value={square}
-                onClick={() => handleClick(index)}
-                key={index}
-              />
-            ))}
+            {squares.map((square, index) => {
+              console.log(square);
+              return (
+                <Square
+                  value={square}
+                  onClick={() => handleClick(index)}
+                  key={index}
+                />
+              );
+            })}
           </div>
           <h4 className="gameStatus">{gameStatus}</h4>
           {isGameOver && (
