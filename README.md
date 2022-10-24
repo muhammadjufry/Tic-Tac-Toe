@@ -13,7 +13,7 @@
 
 ## Live Demo Of The Project
 
-https://muhammadjufri.github.io/odin-landingPage/
+https://sayyidmuhammad878.github.io/odin-landingPage/
 
 ## Authors
 
