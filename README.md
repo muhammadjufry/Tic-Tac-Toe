@@ -13,10 +13,10 @@
 
 ## Live Demo Of The Project
 
-https://sayyidmuhammad878.github.io/odin-landingPage/
+[https://sayyidmuhammad878.github.io/odin-landingPage/](https://tic-tac-toe-project01.netlify.app/)
 
 ## Authors
 
-👤 **Muhammad**
+👤 **Muhammad Jufry**
 
-- GitHub: [MuhammadJufri](https://github.com/MuhammadJufri)
+- GitHub: [MuhammadJufry](https://github.com/muhammadjufry)
